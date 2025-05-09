@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f4e43ca4be.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-rectangle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Engineer</p>
+                <h1>Hi, This is <span>A</span><span>y</span><span>e</span><span>s</span><span>h</span><span>a</span><br>Abaidullah from Lahore</h1>
+            </div>
+        </div>       
+    </div>
+    <!-- -------about------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>As a student in computer Science I'm actively honing my skills in programming languages and other coursework that covers various aspects of software development.
+                       I am also interested in web development and working on it. I am looking forward to internships, projects and collaborations that will allow me to apply my knowledge in real world scenarios.
+                       Besides tech I love book reading,painting,drawing and photography.</p>
+                       <div class="tab-titles">
+                        <p class="tab-links  active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                       </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>HTML<br>CSS<br>JavaScript<br>Dart<br>C++</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026</span><br>BS Computer Science from Government College University Lahore</li>
+                            <li><span>2019-2021</span><br>Intermediate from Lahore College For Women University</li>
+                            <li><span>2017-2019</span><br>Matric from City District Government Girls High School</li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------Services-------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                 <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Computer Science Student</h2>
+                    <p>Pursuing Computer Science Engineering from Government College University Lahore</p>
+                    <a href="#">Learn more</a>
+                 </div>
+                 <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Volunteer</h2>
+                    <p>Volunteer at Al Khidmat Foundation</p>
+                    <a href="#">Learn more</a>
+                 </div>
+                 <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Web Development</h2>
+                    <p>Learning Web Development Skills </p>
+                    <a href="#">Learn more</a>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <!---------portfolio--------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.jpg">
+                    <div class="layer">
+                        <h1>Studying</h1>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.jpg">
+                    <div class="layer">
+                        <h1>Coding</h1>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpg">
+                    <div class="layer">
+                        <h1>Working</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------contact---------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ayeshaabaidullah99@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i></p>
+                    <p><i class="fa-brands fa-linkedin"></i>Ayesha Abaidullah</p>
+                    <p><i class="fa-brands fa-github"></i>Ayesha Abaid</p>
+                    <div class="social-icons">
+                        <a><i class="fa-brands fa-facebook"></i></a>
+                        <a><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Ayesha's new Resume.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://script.google.com/macros/s/AKfycbwAE18W35j9V_1rT7GzP3fBl0KZ8g4XNS_KX2o7txd3-9BZYNRf2GM_fh6A5WoYaUS_og/exec" method='post'>
+                        <input type="text" name="name"placeholder='Your Name'><br><br>
+                        <input type="email" name="email"placeholder='Your Email'><br><br>
+                        <input type="text" name="message"placeholder='Your Message'><br><br>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Ayesha's Portfolio </p>
+        </div>
+    </div>
+    <!-- -------JAVA SCRIPT------- -->
+    
+      <script src="portfolio.js"></script>
+    </body>
+    </html>
